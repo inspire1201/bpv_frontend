@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react';
 import logo from './assets/logo.png';
-import solarBg from './assets/logo1.jpg';
+import solarBg from './assets/images.jpg';
 
 export default function App() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -19,7 +19,7 @@ export default function App() {
       <div
         className="min-h-screen bg-fixed bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${solarBg})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(${solarBg})`,
         }}
       >
         {/* Navbar */}
@@ -45,7 +45,7 @@ export default function App() {
                 ].map((item) => (
                   <button
                     key={item.name}
-                    onClick={() => item.ref && scrollTo(item.ref)}
+                    
                     className="text-gray-700 hover:text-green-600 font-medium text-sm transition-colors duration-200"
                   >
                     {item.name}
@@ -69,7 +69,7 @@ export default function App() {
         {/* Home Section - Coming Soon */}
         <section ref={homeRef} className="min-h-screen flex items-center justify-center px-6 pt-16">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tight animate-pulse">
+            <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tight animate-pulse ">
               Coming Soon
             </h1>
         
